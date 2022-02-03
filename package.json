@@ -1,0 +1,29 @@
+{
+  "name": "frontend-interview-cli",
+  "version": "1.0.0",
+  "description": "cli tool for frontend-interview",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/daeseongkim05/frontend-interview-cli.git"
+  },
+  "author": "daeseongKim",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/daeseongkim05/frontend-interview-cli/issues"
+  },
+  "homepage": "https://github.com/daeseongkim05/frontend-interview-cli#readme",
+  "dependencies": {
+    "chalk": "^5.0.0",
+    "chalk-animation": "^1.6.0",
+    "figlet": "^1.5.2",
+    "gradient-string": "^2.0.0",
+    "inquirer": "^8.2.0",
+    "nanospinner": "^1.0.0"
+  }
+}
