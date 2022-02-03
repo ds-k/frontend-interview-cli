@@ -15,15 +15,17 @@ const quizList = require("./quizList.json");
 let curCategory;
 let curNum;
 
-const sleep = (ms = 1500) => new Promise((r) => setTimeout(r, ms));
+const sleep = (ms = 2000) => new Promise((r) => setTimeout(r, ms));
 
 const onboarding = async () => {
-  const rainbowTitle = chalkAnimation.rainbow(
-    `\n프론트엔드 개발자 면접을 위한 질문 모음 by.daeseongkim05\n`
-  );
+  const msg = "Frontend\nInterview";
 
+  figlet.text(msg, { font: "Big" }, (err, data) => {
+    console.log(` 💻 프론트엔드 개발자 면접을 위한 질문 모음`);
+    console.log(gradient.teen.multiline(data));
+    console.log(` 😜 https://github.com/daeseongkim05`);
+  });
   await sleep();
-  rainbowTitle.stop();
   await qList();
 };
 
@@ -39,27 +41,27 @@ async function qList() {
   });
   curCategory = lists.category;
 
-  return quiz(curCategory);
+  return quiz();
 }
 
 // ! 문제
-async function quiz(category) {
+async function quiz() {
   console.clear();
-  const quizCategory = quizList[category];
-  curNum = Math.floor(Math.random() * quizCategory.length);
+  const quizByCategory = quizList[curCategory];
+  curNum = Math.floor(Math.random() * quizByCategory.length);
 
-  console.log(`${quizCategory[curNum].Q}`);
+  console.log(chalk.bold(`👉 : ${quizByCategory[curNum].Q}`));
 
   chalkAnimation.karaoke(
     `\n\n충분히 생각해보고 정답을 확인해보세요.(아무 키나 눌러주세요.)\n\n`
   );
 
   await inquirer.prompt({
-    name: "정답은....?",
+    name: "정답 확인",
     type: "confirm",
   });
 
-  return showAnswer(curCategory, curNum);
+  return showAnswer();
 }
 
 // ! 옵션 처리
@@ -74,8 +76,8 @@ async function handleQuizAnswer(options) {
   }
 }
 
-async function showAnswer(category, num) {
-  console.log(`\n\n${quizList[category][num].A}\n\n`);
+async function showAnswer() {
+  console.log(`\n\n✅ : ${quizList[curCategory][curNum].A}\n\n`);
   const quiz = await inquirer.prompt({
     name: "options",
     message: "더 푸시겠습니까?",
