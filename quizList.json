@@ -1,4 +1,70 @@
 {
+  "CS": [
+    {
+      "Q": "CS1",
+      "A": "CS1"
+    },
+    {
+      "Q": "CS2",
+      "A": "CS2"
+    },
+    {
+      "Q": "CS3",
+      "A": "CS3"
+    },
+    {
+      "Q": "CS4",
+      "A": "CS4"
+    },
+    {
+      "Q": "CS5",
+      "A": "CS5"
+    }
+  ],
+  "Algorithm": [
+    {
+      "Q": "Algorithm1",
+      "A": "Algorithm1"
+    },
+    {
+      "Q": "Algorithm2",
+      "A": "Algorithm2"
+    },
+    {
+      "Q": "Algorithm3",
+      "A": "Algorithm3"
+    },
+    {
+      "Q": "Algorithm4",
+      "A": "Algorithm4"
+    },
+    {
+      "Q": "Algorithm5",
+      "A": "Algorithm5"
+    }
+  ],
+  "DataStructure": [
+    {
+      "Q": "DataStructure1",
+      "A": "DataStructure1"
+    },
+    {
+      "Q": "DataStructure2",
+      "A": "DataStructure2"
+    },
+    {
+      "Q": "DataStructure3",
+      "A": "DataStructure3"
+    },
+    {
+      "Q": "DataStructure4",
+      "A": "DataStructure4"
+    },
+    {
+      "Q": "DataStructure5",
+      "A": "DataStructure5"
+    }
+  ],
   "Javascript": [
     {
       "Q": "변수란 무엇인가요?",
@@ -21,6 +87,28 @@
       "A": "클로저는 자신이 선언될 당시의 환경을 기억하는 함수 클로저는 함수와 그 함수가 선언된 렉시컬 환경과의 조합이다. 해당 함수의 생명 주기가 종료되더라도 함수의 반환된 값이 변수에 의해 아직 참조되고 있다면 생명 주기가 종료되더라도 (실행 컨텍스트 스택에서 푸시되더라도) 렉시컬 환경에 남아 참조가 가능하다"
     }
   ],
+  "TypeScript": [
+    {
+      "Q": "TypeScript1",
+      "A": "TypeScript1"
+    },
+    {
+      "Q": "TypeScript2",
+      "A": "TypeScript2"
+    },
+    {
+      "Q": "TypeScript3",
+      "A": "TypeScript3"
+    },
+    {
+      "Q": "TypeScript4",
+      "A": "TypeScript4"
+    },
+    {
+      "Q": "TypeScript5",
+      "A": "TypeScript5"
+    }
+  ],
   "React": [
     {
       "Q": "React1",
@@ -41,6 +129,94 @@
     {
       "Q": "React5",
       "A": "React5"
+    }
+  ],
+  "HTML/CSS": [
+    {
+      "Q": "HTML/CSS1",
+      "A": "HTML/CSS1"
+    },
+    {
+      "Q": "HTML/CSS2",
+      "A": "HTML/CSS2"
+    },
+    {
+      "Q": "HTML/CSS3",
+      "A": "HTML/CSS3"
+    },
+    {
+      "Q": "HTML/CSS4",
+      "A": "HTML/CSS4"
+    },
+    {
+      "Q": "HTML/CSS5",
+      "A": "HTML/CSS5"
+    }
+  ],
+  "Network": [
+    {
+      "Q": "Network1",
+      "A": "Network1"
+    },
+    {
+      "Q": "Network2",
+      "A": "Network2"
+    },
+    {
+      "Q": "Network3",
+      "A": "Network3"
+    },
+    {
+      "Q": "Network4",
+      "A": "Network4"
+    },
+    {
+      "Q": "Network5",
+      "A": "Network5"
+    }
+  ],
+  "Browser": [
+    {
+      "Q": "Browser1",
+      "A": "Browser1"
+    },
+    {
+      "Q": "Browser2",
+      "A": "Browser2"
+    },
+    {
+      "Q": "Browser3",
+      "A": "Browser3"
+    },
+    {
+      "Q": "Browser4",
+      "A": "Browser4"
+    },
+    {
+      "Q": "Browser5",
+      "A": "Browser5"
+    }
+  ],
+  "Auth": [
+    {
+      "Q": "Auth1",
+      "A": "Auth1"
+    },
+    {
+      "Q": "Auth2",
+      "A": "Auth2"
+    },
+    {
+      "Q": "Auth3",
+      "A": "Auth3"
+    },
+    {
+      "Q": "Auth4",
+      "A": "Auth4"
+    },
+    {
+      "Q": "Auth5",
+      "A": "Auth5"
     }
   ]
 }

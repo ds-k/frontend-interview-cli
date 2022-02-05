@@ -35,9 +35,20 @@ async function qList() {
   curCategory = "";
   const lists = await inquirer.prompt({
     name: "category",
-    type: "list",
+    type: "rawlist",
     message: "질문을 보고 싶은 항목을 선택해주세요(문제는 랜덤으로 나옵니다.)",
-    choices: ["Javascript", "React"],
+    choices: [
+      "CS",
+      "Algorithm",
+      "DataStructure",
+      "Javascript",
+      "TypeScript",
+      "React",
+      "HTML/CSS",
+      "Network",
+      "Browser",
+      "Auth",
+    ],
   });
   curCategory = lists.category;
 
