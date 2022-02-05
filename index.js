@@ -48,8 +48,11 @@ async function qList() {
 async function quiz() {
   console.clear();
   const quizByCategory = quizList[curCategory];
-  curNum = Math.floor(Math.random() * quizByCategory.length);
-
+  let randomInt = Math.floor(Math.random() * quizByCategory.length);
+  while (curNum === randomInt) {
+    randomInt = Math.floor(Math.random() * quizByCategory.length);
+  }
+  curNum = randomInt;
   console.log(chalk.bold(`👉 : ${quizByCategory[curNum].Q}`));
 
   chalkAnimation.karaoke(
