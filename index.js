@@ -5,12 +5,8 @@ import inquirer from "inquirer";
 import gradient from "gradient-string";
 import chalkAnimation from "chalk-animation";
 import figlet from "figlet";
-import { createSpinner } from "nanospinner";
-import { createRequire } from "module";
-import { link } from "fs";
 import open from "open";
-const require = createRequire(import.meta.url);
-const quizList = require("./quizList.json");
+import quizList from "./quizList/index.js";
 
 let curCategory;
 let curNum;
@@ -29,7 +25,6 @@ const onboarding = async () => {
   await qList();
 };
 
-// ! 목록
 async function qList() {
   console.clear();
   curCategory = "";
@@ -41,10 +36,10 @@ async function qList() {
       "CS",
       "Algorithm",
       "DataStructure",
-      "Javascript",
+      "JavaScript",
       "TypeScript",
       "React",
-      "HTML/CSS",
+      "HTML_CSS",
       "Network",
       "Browser",
       "Auth",
@@ -55,7 +50,6 @@ async function qList() {
   return quiz();
 }
 
-// ! 문제
 async function quiz() {
   console.clear();
   const quizByCategory = quizList[curCategory];
@@ -67,7 +61,7 @@ async function quiz() {
   console.log(chalk.bold(`👉 : ${quizByCategory[curNum].Q}`));
 
   chalkAnimation.karaoke(
-    `\n\n충분히 생각해보고 정답을 확인해보세요.(아무 키나 눌러주세요.)\n\n`
+    `\n\n\n충분히 생각해보고 정답을 확인해보세요.(아무 키나 눌러주세요.)\n\n\n`
   );
 
   await inquirer.prompt({
@@ -78,7 +72,6 @@ async function quiz() {
   return showAnswer();
 }
 
-// ! 옵션 처리
 async function handleQuizAnswer(options) {
   if (options === "다음 문제") {
     quiz(curCategory);
