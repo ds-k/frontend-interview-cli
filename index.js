@@ -19,7 +19,7 @@ const onboarding = async () => {
   figlet.text(msg, { font: "Big" }, (err, data) => {
     console.log(` 💻 프론트엔드 개발자 면접을 위한 질문 모음`);
     console.log(gradient.teen.multiline(data));
-    console.log(` 😜 https://github.com/daeseongkim05`);
+    console.log(` 😜 https://github.com/ds-k`);
   });
   await sleep();
   await qList();
@@ -76,7 +76,7 @@ async function handleQuizAnswer(options) {
   if (options === "다음 문제") {
     quiz(curCategory);
   } else if (options === "깃허브 방문하기") {
-    open("https://github.com/daeseongkim05/frontend-interview-cli");
+    open("https://github.com/ds-k/frontend-interview-cli");
     qList();
   } else {
     qList();
